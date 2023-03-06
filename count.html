@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>calculate the number
+      of words in a string</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+  </script>
+</head>
+ 
+<body style="background-color:grey;">
+    <h3 style="color: navy">Enter the words to count</h3>
+    <textarea>  </textarea>
+    <br>
+    <button type="button">click here to know the count</button>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("button").click(function() {
+                var a = $.trim($("textarea").val());
+                var b = a.split(" ")
+                alert(b.length);
+            });
+        });
+    </script>
+</body>
+ 
+</html>
